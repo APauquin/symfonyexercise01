@@ -10,6 +10,9 @@
             <div class="media-body">
                 <h2 class="mt-0">{{ episode.number }}:  {{ episode.title }}</h2>
                 <p>{{ episode.synopsis }}</p>
+            <a href="{{ path('program_episode_show', { "program": program.id, "season": season.id, "episode": episode.id }) }}">
+                Voir plus
+            </a>
             </div>
         {% endfor %}
     </div>
